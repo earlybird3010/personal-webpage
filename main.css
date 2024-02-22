@@ -3,3 +3,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+#explore {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    color: #001F3F;
+}
