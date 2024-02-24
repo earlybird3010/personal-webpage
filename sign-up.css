@@ -3,4 +3,29 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.userName, .email, .password, .submit {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form input {
+    padding: 10px;
+}
+
+button {
+    font-size: 20px;
+    background-color: #4caf50;
 }
