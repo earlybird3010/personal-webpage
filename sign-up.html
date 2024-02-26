@@ -1,33 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>SIGN UP</title>
-    <link rel="stylesheet" href="sign-up.css" />
+    <meta charset="UTF-8" />
+    <title>OAA Survey Form</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
-    <div class="form-container">
-      <form action="" method="post">
-        <h2>SIGN UP NOW</h2>
+    <form method="post">
+      <fieldset>
+        <legend>Add user</legend>
 
-        <div class="userName">
-          <label for="userName">Username:</label>
-          <input type="text" id="userName" name="userName" />
-        </div>
+        <section id="personal-info">
+          <div class="firstName">
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="first_name" />
+          </div>
 
-        <div class="email">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="userEmail" />
-        </div>
+          <div class="lastName">
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="last_name" />
+          </div>
 
-        <div class="password">
-          <label for="password">Password:</label>
-          <input type="text" id="password" name="userPassword" />
-        </div>
+          <div class="email">
+            <label for="emailUser">Email: </label>
+            <input type="email" id="emailUser" name="email_user" />
+          </div>
+        </section>
 
-        <div class="submit">
-          <button type="submit">SIGN UP</button>
-        </div>
-      </form>
-    </div>
+        <section id="identity">
+          <div class="status">
+            <label for="status">Status: </label>
+            <select id="status">
+              <option value="">Status</option>
+              <option value="Student">Student</option>
+              <option value="Teacher">Teacher</option>
+              <option value="Guess">Guess</option>
+            </select>
+          </div>
+
+          <div class="date">
+            <label for="date">Date:</label>
+            <input type="date" id="date" />
+          </div>
+        </section>
+
+        <section id="language">
+          <p>Choose your favorite language:</p>
+          <div class="language-choice">
+            <div class="HTML">
+              <input type="radio" id="HTML" name="html" />
+              <label for="HTML">HTML</label>
+            </div>
+            <div class="CSS">
+              <input type="radio" id="CSS" name="css" />
+              <label for="CSS">CSS</label>
+            </div>
+            <div class="JavaScript">
+              <input type="radio" id="JavaScript" name="javascript" />
+              <label for="JavaScript">JavaScript</label>
+            </div>
+          </div>
+        </section>
+
+        <section id="additionalInformation">
+          <div class="comments">
+            <label for="Comments">Comments</label>
+            <textarea id="Comments" name="comments"> </textarea>
+          </div>
+        </section>
+
+        <section id="submission">
+          <div class="checkbox">
+            <div>
+              <input type="checkbox" id="newsletter" />
+              <label for="newsletter">Sign up for newsletter</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="termsAndConditions" />
+              <label for="termsAndConditions"
+                >Agree to terms and conditions</label
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="button">
+          <button type="submit">Submit</button>
+        </section>
+      </fieldset>
+    </form>
   </body>
 </html>

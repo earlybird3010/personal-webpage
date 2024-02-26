@@ -1,31 +1,73 @@
-body{
+body {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: #f4f4f4;
 }
 
-.form-container {
+form {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-    padding: 20px;
 }
 
-.userName, .email, .password, .submit {
+fieldset {
+    /*makes all sections in fieldset become flex-items for alignment*/
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    width: 500px;
+    height: 100%;
+    align-items: center;
+    border: white;
 }
 
-form input {
-    padding: 10px;
+section {
+    width: 50%; /*Makes all sections have the same width*/
+    margin-top: 5px;
+}
+
+#personal-info *, #language, #submission {
+    /*Makes elements appear on top of each other*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#identity, .checkbox {
+    /*Equal length for status and date*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#identity .status, #identity .date, #additionalInformation .comments {
+    /*label on top of input control*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#identity .status {
+    /*space between status and date*/
+    margin-right: 5px
+}
+
+.language-choice {
+    /*evenly distribute 3 radio buttons across width of container*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 button {
-    font-size: 20px;
+    width: 50%;
     background-color: #4caf50;
 }
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+
+
