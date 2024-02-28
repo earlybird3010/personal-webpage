@@ -1,13 +1,42 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background-color: #f4f4f4;
+    background-image: url(https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fhomepage%2Fjasper-lake-hero-banner.webp&w=1920&q=75);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+/*nav*/
+
+nav {
+    align-self: flex-end;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/**/
+
 form {
+    align-self: center;
     background-color: white;
+    opacity: 80%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
