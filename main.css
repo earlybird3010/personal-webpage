@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/f22d395f391b5c099f6669bd/pexelsphoto2765872.jpeg);
+    background-image: url(https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12,4 +12,21 @@ body {
     justify-content: center;
     font-size: 4em;
     color: #001F3F;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
 }
