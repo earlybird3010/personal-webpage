@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(pexels-artem-saranin-1477199.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*nav*/
+
+nav {
+    align-self: flex-end;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*websites*/
+
+.websites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    opacity: 0.9;
+    padding: 50px 0 50px 0;
+    margin: 10%;
+}
+
+.websites li {
+    margin: 10px;
+}
