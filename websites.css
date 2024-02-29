@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(pexels-artem-saranin-1477199.jpg);
+    background-image: url(images/pexels-artem-saranin-1477199.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -46,4 +46,8 @@ nav a {
 
 .websites li {
     margin: 10px;
+}
+
+h1 {
+    text-align: center;
 }

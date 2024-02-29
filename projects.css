@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/fairy-tale-village-with-white-snow-winter-cartoon-scene-background_120819-3821.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+/*nav*/
+
+nav {
+    align-self: flex-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/**/
+.projects {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100vh;
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+}
+
+.projects img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.projects div {
+    margin: 20px;
+}
